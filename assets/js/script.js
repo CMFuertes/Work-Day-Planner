@@ -44,8 +44,8 @@ $(document).ready(function () {
     var plannerItem = $(this).siblings(".description").val();
     console.log(plannerItem);
     var listItem = $(this).parent().attr("id");
-
-    localStorage.setItem(listItem, plannerItem);
+    console.log(listItem);
+    localStorage.setItem(listItem, JSON.stringify(plannerItem));
   });
 
 });
