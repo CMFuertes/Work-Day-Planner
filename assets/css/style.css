@@ -1,19 +1,30 @@
 body {
-    line-height: 1;
-    background-color: whitesmoke;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: 20px;
-  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
   }
+
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }  
+
   .jumbotron {
     text-align: center;
-    background-color: whitesmoke;
+    background-color: transparent;
     color: black;
-    border-bottom: 5px solid black;
- 
-    padding: 10px;
-    margin: 10px;
+    border-radius: 0;
+    border-bottom: 10px solid black;
   }
+
+  .description{
+    white-space: pre-wrap;
+  }  
+
   .container{
       margin-bottom: 20px;
   }
@@ -21,54 +32,47 @@ body {
       font-weight: bold;
   }
   
-  textarea{
-  background: transparent;
-  border: none;
-  color: black;
-  padding: 15px;
-  resize: none;
-  border-left: 0.5px solid black;
-  }
-
   .time-slot{
-    font-size: 15px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
   }
   
   .row {
-    height: 60px;
-    border-radius: 10px;
-    border-top: 2px solid grey;
-  }
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
   
   .hour {
-    background-image: url(../images/marble-4145542_1920.jpg);
-    background-color: whitesmoke;
+    background-color: #ffffff;
     color: #000000;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 10px;
+    border-top: 1px dashed #000000;
   }
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #5e6263;
-    color: white;
-  }
+
   .past {
-    background-color: #999494;
+    background-color: #d3d3d3;
     color: white;
     opacity: 0.5;
   }
   
   .present {
-    background-color: #f5a5bd;
+    background-color: #ff6961;
     color: white;
   }
   
   .future {
-    background-color: #a6f1a6;
+    background-color: #77dd77;
     color: white;
   }
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #06AED5;
+    color: white;
+  }
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  

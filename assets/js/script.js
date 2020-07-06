@@ -1,15 +1,13 @@
 $(document).ready(function () {
   // console.log("Ready to go!"); code works!
 
-  $("#todaysDate").text(moment().format("dddd, MMMM Do")); //displays the date format from moment for the id todaysDate
+  $("#todaysDate").text(moment().format("dddd, MMMM Do YYYY")); //displays the date format from moment for the id todaysDate
 
   function whatTime() { //create a function to determine what time it is for planner blocks
     var currentTime = moment().hours(); //establish the current time
 
     $(".time-slot").each(function () {
       var timeSlot = parseInt($(this).attr("id").split("-")[1]); //each time slot returns as an integer
-
-
 
       //using an else if statement to determing past, present or future for schedule blocks
       if (timeSlot < currentTime) { // if hour is greater than current time, add the class past
