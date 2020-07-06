@@ -1,0 +1,74 @@
+body {
+    line-height: 1;
+    background-color: whitesmoke;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 20px;
+  
+  }
+  .jumbotron {
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    border-bottom: 5px solid black;
+ 
+    padding: 10px;
+    margin: 10px;
+  }
+  .container{
+      margin-bottom: 20px;
+  }
+  #todaysDate{
+      font-weight: bold;
+  }
+  
+  textarea{
+  background: transparent;
+  border: none;
+  color: black;
+  padding: 15px;
+  resize: none;
+  border-left: 0.5px solid black;
+  }
+
+  .time-slot{
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .row {
+    height: 60px;
+    border-radius: 10px;
+    border-top: 2px solid grey;
+  }
+  
+  .hour {
+    background-image: url(../images/marble-4145542_1920.jpg);
+    background-color: whitesmoke;
+    color: #000000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+  }
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #5e6263;
+    color: white;
+  }
+  .past {
+    background-color: #999494;
+    color: white;
+    opacity: 0.5;
+  }
+  
+  .present {
+    background-color: #f5a5bd;
+    color: white;
+  }
+  
+  .future {
+    background-color: #a6f1a6;
+    color: white;
+  }
