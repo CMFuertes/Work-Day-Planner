@@ -4,14 +4,6 @@ Create a simple calendar application that allows the user to save events for eac
 
 You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
-## User Story
-
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
 ## Acceptance Criteria
 
 ```
@@ -30,17 +22,6 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-The following animation demonstrates the application functionality:
+## User Story
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+With the index.html and style.css provided, I then created an script.js to start the project. The index.html was linked to the stylesheet and javascripts. Rows and colums were created to display the schedule blocks. Moment.js was linked in order to display the date and time. Through JS we created an else if function to determine whether the schedule blocks are in the past, present or future. Where through css, the blocks will display specific colors depending on the time of day. Past blocks are given an opacity in order to give the blocks of a faded appearance. Users can input text into each schedule block, where upon clicking save, the inputed date will be stored in local storage. With .children we are able to search through the children in each individual time sloct in order to construct a new jQuery object from the matching elements. plannerItems are given parents in listItem and thus stored with the use of JSON.stringify. 
